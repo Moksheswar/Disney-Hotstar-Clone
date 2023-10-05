@@ -3,7 +3,7 @@ let searchBtn=document.getElementById("search-btn");
 let result=document.getElementById("result");
 let getMovie=() => {
     let movieName=movieNameRef.value;
-    let url=`http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    let url=`https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
     if(movieName.length<=0){
         result.innerHTML='<h3 class="msg" style="color:#a0a0a0;">Please Enter A Movie Name</h3>';
     }
@@ -49,7 +49,7 @@ let getMovie=() => {
 let input=document.querySelector('input');
 input.addEventListener('keyup',(e)=>{
     if(e.keyCode==13){
-        let url=`http://www.omdbapi.com/?t=${e.target.value}&apikey=${key}`;
+        let url=`https://www.omdbapi.com/?t=${e.target.value}&apikey=${key}`;
     if(e.target.value.length<=0){
         result.innerHTML='<h3 class="msg" style="color:#a0a0a0;">Please Enter A Movie Name</h3>';
     }
